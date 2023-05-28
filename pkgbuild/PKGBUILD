@@ -7,13 +7,17 @@ pkgdesc="Meta pacote do Wayland para UaiSo"
 arch=('any')
 url="https://github.com/UaiSO21/$pkgname"
 license=('GPL3')
+
 depends=(
     'egl-wayland'
+    'glfw-wayland'
     'kwayland-integration'
     'kwayland-server'
+    'qt5-wayland'
     'wayland'
     'wayland-utils'
     )
+    
 provides=("$pkgname")
 # conflicts=('')
 source=("git+${url}.git")
